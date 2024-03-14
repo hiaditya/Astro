@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Astro Live</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+    <style>
+        body {
+            margin: 0px
+        }
+
+        .jwplayer {
+            position: absolute !important
+        }
+
+        .jwplayer.jw-flag-aspect-mode {
+            min-height: 100%;
+            max-height: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <div id="jwplayerDiv"></div>
+    <script type="text/javascript">
+        jwplayer("jwplayerDiv").setup({
+            file: "https://linearjitp02-playback.astro.com.my/dash-wv/linear/2504/default.mpd", position: 'bottom',
+            "autostart": true,
+            "stretching": "exactfit",
+            "width": "100%",
+            type: "dash",
+            drm: {
+                "clearkey": {
+                    "keyId": "03c2e0af2f8159f9f0ce9b5dbc865f10",
+                    "key": "cd84ed136b0cc71f8ab8cd4d4f6a2e4c"
+                }
+            }
+        });    
+    </script>
+</body>
+
+</html>
